@@ -34,6 +34,7 @@
 #include "MagicNumbersCheck.h"
 #include "MakeMemberFunctionConstCheck.h"
 #include "MathMissingParenthesesCheck.h"
+#include "MisleadingIdentifierPrefixCheck.h"
 #include "MisleadingIndentationCheck.h"
 #include "MisplacedArrayIndexCheck.h"
 #include "NamedParameterCheck.h"
@@ -132,6 +133,8 @@ public:
         "readability-magic-numbers");
     CheckFactories.registerCheck<MakeMemberFunctionConstCheck>(
         "readability-make-member-function-const");
+    CheckFactories.registerCheck<MisleadingIdentifierPrefixCheck>(
+        "readability-misleading-identifier-prefix");
     CheckFactories.registerCheck<MisleadingIndentationCheck>(
         "readability-misleading-indentation");
     CheckFactories.registerCheck<MisplacedArrayIndexCheck>(

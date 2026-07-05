@@ -31,6 +31,7 @@ add_clang_library(clangTidyReadabilityModule STATIC
   MagicNumbersCheck.cpp
   MakeMemberFunctionConstCheck.cpp
   MathMissingParenthesesCheck.cpp
+  MisleadingIdentifierPrefixCheck.cpp
   MisleadingIndentationCheck.cpp
   MisplacedArrayIndexCheck.cpp
   NamedParameterCheck.cpp
