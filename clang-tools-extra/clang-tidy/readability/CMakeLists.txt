@@ -9,6 +9,7 @@ add_clang_library(clangTidyReadabilityModule STATIC
   AvoidNestedConditionalOperatorCheck.cpp
   AvoidReturnWithVoidValueCheck.cpp
   AvoidUnconditionalPreprocessorIfCheck.cpp
+  BoolFunctionNameCheck.cpp
   BracesAroundStatementsCheck.cpp
   ConstReturnTypeCheck.cpp
   ContainerContainsCheck.cpp

@@ -13,6 +13,7 @@
 #include "AvoidNestedConditionalOperatorCheck.h"
 #include "AvoidReturnWithVoidValueCheck.h"
 #include "AvoidUnconditionalPreprocessorIfCheck.h"
+#include "BoolFunctionNameCheck.h"
 #include "BracesAroundStatementsCheck.h"
 #include "ConstReturnTypeCheck.h"
 #include "ContainerContainsCheck.h"
@@ -89,6 +90,8 @@ public:
         "readability-avoid-return-with-void-value");
     CheckFactories.registerCheck<AvoidUnconditionalPreprocessorIfCheck>(
         "readability-avoid-unconditional-preprocessor-if");
+    CheckFactories.registerCheck<BoolFunctionNameCheck>(
+        "readability-bool-function-name");
     CheckFactories.registerCheck<BracesAroundStatementsCheck>(
         "readability-braces-around-statements");
     CheckFactories.registerCheck<ConstReturnTypeCheck>(
